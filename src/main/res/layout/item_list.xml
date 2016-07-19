@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+
+    <ImageView
+        android:id="@+id/previouspic"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dp"
+        android:background="#cbcbcb"
+        android:scaleType="center"
+         />
+
+
+    <TextView
+        android:id="@+id/titletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/previouspic"
+        android:layout_toRightOf="@+id/previouspic"
+        android:text="数据获取自网易新闻"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/previouspic"
+        android:layout_toRightOf="@+id/previouspic"
+        android:text="网易" />
+
+    <TextView
+        android:id="@+id/comment_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/from"
+        android:layout_alignParentRight="true"
+        android:text="阅读量" />
+
+</RelativeLayout>

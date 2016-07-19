@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/santutxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="18sp"
+        android:textColor="#000000"/>
+
+
+    <ImageView
+        android:id="@+id/santu1"
+        android:layout_width="120dp"
+        android:layout_height="96dp"
+        android:background="#cbcbcb"
+        android:layout_below="@+id/santutxt"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/santu2"
+        android:layout_width="120dp"
+        android:layout_height="96dp"
+        android:background="#cbcbcb"
+        android:layout_alignBottom="@+id/santu1"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/santu3"
+        android:layout_width="120dp"
+        android:layout_height="96dp"
+        android:background="#cbcbcb"
+        android:layout_alignBottom="@+id/santu2"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:id="@+id/laiyuan"
+        android:layout_below="@+id/santu1"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/huifu"
+        android:layout_below="@+id/santu3"
+        android:layout_alignParentRight="true"
+        android:paddingTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.MainActivity"
+    tools:showIn="@layout/activity_main">
+    <TextView
+        android:id="@+id/netstatus"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff8f3f"
+        android:gravity="center"
+        android:text="网络异常请重新设置!"
+        android:textSize="15sp"/>
+
+
+
+    <com.buchuanqiuku.demo.news.view.CustomViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </com.buchuanqiuku.demo.news.view.CustomViewPager>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eeeeee"/>
+    <RadioGroup
+        android:id="@+id/rg_bottomtab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_xinwen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/btn_xinwen"
+            android:textColor="@drawable/rb_text_color"
+            android:textSize="10sp"
+            android:text="新闻"/>
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_yuedu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@drawable/rb_text_color"
+            android:textSize="10sp"
+            android:drawableTop="@drawable/btn_yuedu"
+            android:text="阅读" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_shipin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@drawable/btn_shipin"
+            android:textSize="10sp"
+            android:textColor="@drawable/rb_text_color"
+            android:text="视频" />
+
+        <android.support.v7.widget.AppCompatRadioButton
+            android:id="@+id/rb_huati"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/btn_huati"
+            android:textSize="10sp"
+            android:gravity="center"
+            android:textColor="@drawable/rb_text_color"
+            android:text="话题" />
+    </RadioGroup>
+
+
+</LinearLayout>
